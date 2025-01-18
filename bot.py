@@ -2227,11 +2227,11 @@ def admin_menu(message):
 def gates(call):
     markup = types.InlineKeyboardMarkup(row_width=1)
     braintree_btn = types.InlineKeyboardButton("Braintree Auth", callback_data='time_sleep:Braintree Auth')
-    braintreec_btn* = types.InlineKeyboardButton("Braintree Charge", callback_data='time_sleep:Braintree Charge')
+    braintreec_btn = types.InlineKeyboardButton("Braintree Charge", callback_data='time_sleep:Braintree Charge')
     stripec_btn = types.InlineKeyboardButton("Braintree Charge", callback_data='time_sleep:Stripe Charge')
     lookup_btn = types.InlineKeyboardButton("3D Lookup", callback_data='time_sleep:3D Lookup')
     stripe_btn = types.InlineKeyboardButton("Stripe Auth", callback_data='time_sleep:Stripe Auth')
-    markup.add(braintree_btn,braintreec_btn, stripe_btn,stripec_btn, lookup_btn, )
+    markup.add(braintree_btn, braintreec_btn, stripe_btn, stripec_btn, lookup_btn)
     
     
     bot.edit_message_text(
